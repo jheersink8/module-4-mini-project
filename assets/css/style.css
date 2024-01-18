@@ -1,0 +1,157 @@
+:root {
+    --primary1: #F8FAE5;
+    --primary2: #43766C;
+    --primary3: #B19470;
+    --primary4: #76453B;
+}
+
+* {
+    color: var(--primary1);
+    background-color: var(--primary2);
+}
+
+.topRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    height: 90px;
+    font-size: 40px;
+    background-color: var(--primary4);
+    color: var(--primary1);
+    border: 7px solid var(--primary1);
+    border-radius: 5px;
+}
+
+.timeHead {
+    margin-top: 25px;
+    width: 15%;
+    margin-bottom: 25px;
+    border: 2px solid var(--primary1);
+    border-radius: 5px;
+}
+
+.timeHead h2,
+.timeHead p {
+    padding: 10px 0px 10px 0px;
+    border: 5px solid var(--primary1);
+    margin: 0px;
+    width: auto;
+    text-align: center;
+}
+
+.timeHead h2 {
+    background-color: var(--primary4);
+}
+
+.guessHead {
+    margin-top: 25px;
+    width: 75%;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 2px solid var(--primary1);
+    border-radius: 5px;
+}
+
+.guessHead h2,
+.guessHead section {
+    padding: 10px 0px 10px 0px;
+    border: 5px solid var(--primary1);
+    margin: 0px;
+    width: auto;
+    text-align: center;
+}
+
+.guessHead h2 {
+    background-color: var(--primary4);
+}
+
+#userGuess {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 20px;
+    font-size: xx-large;
+    align-items: center;
+    justify-content:center;
+}
+
+.scoreHead{
+
+    border-radius: 5px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.scoregrid {
+   
+    padding: 18px 0px 18px 0px;
+    margin: 0px;
+    border: 5px solid var(--primary1);
+}
+
+#scoreboard {
+    width: 30%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1.5fr 1.5fr;
+    grid-template-areas:
+        'scoreTitle scoreTitle'
+        'win loss'
+        'winCount lossCount';
+    border: 5px solid --primary2;
+    text-align: center;
+}
+
+#scoreTitle {
+    grid-area: scoreTitle;
+    background-color: var(--primary4);
+}
+
+#win {
+    grid-area: win;
+}
+
+#loss {
+    grid-area: loss;
+}
+
+#winCount {
+    grid-area: winCount;
+}
+
+#lossCount {
+    grid-area: lossCount;
+}
+
+.result{
+    font-size: 50px;
+    font-weight: 600;
+    width: 75%;
+    text-align: center;
+    height: 43px;
+}
+
+.blankGuess{
+    border-bottom: 3px solid black; 
+    width: 10px;
+    padding:20px 20px 42px 20px; 
+    margin:5px;
+    text-align: center;
+}
+
+.correctGuess{
+
+    width: 10px;
+    padding:20px 20px 3px 20px; 
+    margin:5px;
+    text-align: center;
+}
